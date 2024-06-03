@@ -4,7 +4,7 @@ import Blog from '../Blog/Blog';
 const Blogs = () => {
     return (
        <>
-            <main>
+            <main className='h-full'>
                 <section>
                     <Blog/>
                 </section>
