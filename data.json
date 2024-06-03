@@ -1,0 +1,14 @@
+[
+    {
+        "blogID":1,
+        "title":"Tech blog post about machine larning",
+        "publishDate":"25-03-2024",
+        "blog":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque nesciunt dolor! Consequatur, explicabo non porro officiis quasi rerum illo!"
+    },
+    {
+        "blogID":1,
+        "title":"how machine learn from image data to detect an object",
+        "publishDate":"25-03-2024",
+        "blog":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque nesciunt dolor! Consequatur, explicabo non porro officiis quasi rerum illo!"
+    }
+]
