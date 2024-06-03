@@ -1,4 +1,6 @@
 import React from "react"
+import Header from "./components/Header/Header"
+
 
 
 function App() {
@@ -6,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div className="text-5xl">hello</div>
+      <Header/>
     </>
   )
 }
