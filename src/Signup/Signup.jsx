@@ -16,6 +16,10 @@ const Signup = () => {
 
 
         })
+
+        setEmail('')
+        setFullname('')
+        setPassword('')
     }
 
 
