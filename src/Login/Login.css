@@ -1,0 +1,4 @@
+.login-btn{
+    background: #abf15b;
+    @apply px-3 py-1 text-white;
+}

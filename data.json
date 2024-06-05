@@ -6,7 +6,31 @@
         "blog":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque nesciunt dolor! Consequatur, explicabo non porro officiis quasi rerum illo!"
     },
     {
-        "blogID":1,
+        "blogID":2,
+        "title":"how machine learn from image data to detect an object",
+        "publishDate":"25-03-2024",
+        "blog":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque nesciunt dolor! Consequatur, explicabo non porro officiis quasi rerum illo!"
+    },
+    {
+        "blogID":3,
+        "title":"how machine learn from image data to detect an object",
+        "publishDate":"25-03-2024",
+        "blog":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque nesciunt dolor! Consequatur, explicabo non porro officiis quasi rerum illo!"
+    },
+    {
+        "blogID":4,
+        "title":"how machine learn from image data to detect an object",
+        "publishDate":"25-03-2024",
+        "blog":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque nesciunt dolor! Consequatur, explicabo non porro officiis quasi rerum illo!"
+    },
+    {
+        "blogID":5,
+        "title":"how machine learn from image data to detect an object",
+        "publishDate":"25-03-2024",
+        "blog":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque nesciunt dolor! Consequatur, explicabo non porro officiis quasi rerum illo!"
+    },
+    {
+        "blogID":6,
         "title":"how machine learn from image data to detect an object",
         "publishDate":"25-03-2024",
         "blog":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque nesciunt dolor! Consequatur, explicabo non porro officiis quasi rerum illo!"

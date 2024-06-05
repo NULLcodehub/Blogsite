@@ -1,6 +1,7 @@
 import React from 'react';
 import blogImage from '../../assets/static.jpg'
 import BlogDatas from "../../../data.json"
+import './Blog.css'
 const Blog = () => {
 
     console.log(BlogDatas)
@@ -8,13 +9,13 @@ const Blog = () => {
     return (
         <>  
 
-            <section >
+            <section className=''>
                 {
                         BlogDatas.map((BlogData,index)=>
                     (
                         <>
                         
-                            <section className='flex  flex-col md:flex-row p-5 justify-center  '>
+                            <section className='flex  flex-col md:flex-row p-5 justify-center anime-blog '>
                                 <div className='w-6/6 md:w-1/6 '>
                                     <img src={blogImage} alt="" className='w-fit h-fit' />
                                 </div>
