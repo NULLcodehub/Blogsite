@@ -15,12 +15,12 @@ const Blog = () => {
                     (
                         <>
                         
-                            <section className='flex  flex-col md:flex-row p-5 justify-center anime-blog '>
+                            <section className='flex  flex-col md:flex-row p-5 justify-center anime-blog ' key={index}>
                                 <div className='w-6/6 md:w-1/6 '>
                                     <img src={blogImage} alt="" className='w-fit h-fit' />
                                 </div>
                             
-                                <div className='px-6 md:w-3/6' key={index}>
+                                <div className='px-6 md:w-3/6' >
                                     <h1 className='text-xl md:text-2xl text-gray-800 uppercase'>{BlogData.title}</h1>
                                     <p className=' py-3 text-gray-600'> published: 25-05-2024</p>
                                     <p className='py-2 text-gray-600'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque nesciunt dolor! Consequatur, explicabo non porro officiis quasi rerum illo!</p>
