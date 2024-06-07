@@ -1,8 +1,26 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, json } from 'react-router-dom';
 import './Login.css'
 
 const Login = () => {
+
+    const [email,setEmail]=useState('')
+    const [password,setPassword]=useState('')
+
+
+    const handleLogin=async (e)=>{
+        e.preventDefault()
+
+        await fetch('http://localhost:4000/login',
+            {
+                method:'POST',
+                body:JSON.stringify({email,password}),
+                headers:{'Content-Type': 'application/json'}
+
+            }
+        )
+    }
+
     return (
         <>
             <section>
@@ -11,9 +29,20 @@ const Login = () => {
                         <h1 className='text-center text-3xl my-3'><Link to='/'>Code blog</Link></h1>
 
                         <div className='  '>
-                            <form action="">
-                                <input type="text" className=' w-full h-11 border-b-2 p-2 border-gray-400 my-3' placeholder='yourmail@email.com'  />
-                                <input type="password" className=' w-full h-11 border-b-2 border-gray-400 p-2 my-3' placeholder='password'  />
+                            <form action="" onSubmit={handleLogin}>
+                                <input type="text" className=' w-full h-11 border-b-2 p-2 border-gray-400 my-3'
+                                    placeholder='yourmail@email.com'
+                                    value={email}
+                                    onChange={(e)=>setEmail(e.target.value)}
+                                 
+                                 />
+                                <input type="password" className=' w-full h-11 border-b-2 border-gray-400 p-2 my-3'
+                                     placeholder='password'
+                                     value={password}
+                                    onChange={(e)=>setPassword(e.target.value)}
+                                     
+                                     
+                                     />
                                 <button className='login-btn'>Log in</button>
                             </form>
                         </div>
