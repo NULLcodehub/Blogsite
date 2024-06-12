@@ -12,7 +12,7 @@ const Signup = () => {
             method:'POST',
             body:JSON.stringify({fullname,email,password}),
             headers:{'Content-Type':'application/json'}
-           
+            
 
 
         })

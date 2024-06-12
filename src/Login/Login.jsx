@@ -1,25 +1,43 @@
 import React, { useState } from 'react';
-import { Link, json } from 'react-router-dom';
+import { Link, Navigate, json } from 'react-router-dom';
 import './Login.css'
 
 const Login = () => {
 
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
-
+    const [redirect,setRedirect]=useState(false)
 
     const handleLogin=async (e)=>{
         e.preventDefault()
 
-        await fetch('http://localhost:4000/login',
+       const responce= await fetch('http://localhost:4000/login',
             {
                 method:'POST',
                 body:JSON.stringify({email,password}),
-                headers:{'Content-Type': 'application/json'}
+                headers:{'Content-Type': 'application/json'},
+                credentials: 'include'
 
             }
+            
         )
+        if (responce.ok){
+            setRedirect(true)
+        }else{
+            alert('wrong credentials')
+        }
+
+
     }
+
+    
+
+
+    if (redirect){
+        return <Navigate to={'/'} />
+    }
+
+
 
     return (
         <>
